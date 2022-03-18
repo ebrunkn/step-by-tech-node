@@ -29,7 +29,7 @@ const memberSave = async (req, res) => {
             first_name: req.body.first_name,
             last_name: req.body.last_name,
         })
-        res.status(200).json(member)
+        res.status(200).json('New Member Created')
     } catch (error) {
         res.status(404).json('Error')
     }

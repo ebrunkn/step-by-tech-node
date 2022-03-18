@@ -1,5 +1,9 @@
 const Joi = require("joi");
+const bcrypt = require('bcrypt');
 const User = require('../db/models/user')
+
+const saltRounds = 10;
+const salt = bcrypt.genSaltSync(saltRounds);
 
 const userList = async (req, res) => {
     try {
@@ -38,9 +42,9 @@ const userSave = async (req, res) => {
             last_name: req.body.last_name,
             email: req.body.email,
             mobile: req.body.mobile,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, salt),
         })
-        res.status(200).json(user)
+        res.status(200).json('New User Created')
     } catch (error) {
         res.status(404).json('Error')
     }
