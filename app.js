@@ -36,7 +36,9 @@ app.get('/health', async (req, res) => {
 
 // All the Catalogue API Routes are loading from here
 const userRoutes = require('./routes/user.routes')
+const memberRoutes = require('./routes/member.routes')
 app.use('/users', userRoutes)
+app.use('/members', memberRoutes)
 
 // Server
 const port = process.env.PORT || 3000

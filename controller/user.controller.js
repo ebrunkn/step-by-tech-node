@@ -46,7 +46,7 @@ const userSave = async (req, res) => {
     }
 }
 
-const deleteUser = async (req, res) => {
+const userDelete = async (req, res) => {
     const schema = Joi.object({
         id: Joi.number().required(),
     })
@@ -78,5 +78,5 @@ const deleteUser = async (req, res) => {
 module.exports = {
     userList,
     userSave,
-    deleteUser,
+    userDelete,
 }
