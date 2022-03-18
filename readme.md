@@ -81,6 +81,9 @@ Go to postman and call the Health API:
 http://localhost:7300/health
 ```
 ## API Documentation
+
 ```
 https://documenter.getpostman.com/view/12797022/UVsPNQ7v
 ```
+
+Postman collection is added on code repo. You can import `Step By Tech.postman_collection.json` to your postman workspace and test the api.
