@@ -23,7 +23,7 @@
 ### On Local Enviornment (Option : 1)
 1) Pull the code from Repo.
 2) Create `.env` file on project root.
-3) Configure `.env` parameteres as below / Just rename `.env.example` to `.env` and make the required changes on value:
+3) Configure `.env` parameteres as below / Just rename `.env.example` to `.env` and make the required changes on env values:
 4) Create the new MySQL DB on your machine.
 ```sh
 NODE_ENV=development
@@ -36,7 +36,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 DB_PORT=3306
 ```
-Run below commands on terminal:
+Run below commands on project root terminal:
 ```sh
 npm i
 npm i -g sequelize-cli
@@ -52,7 +52,7 @@ http://localhost:3000/health
 ### On Docker Enviornment (Option : 2)
 1) Pull the code from Repo.
 2) Create `.env` file on project root.
-3) Configure `.env` parameteres as below / Just rename `.env.example` to `.env` and make the required changes on value:
+3) Configure `.env` parameteres as below / Just rename `.env.example` to `.env` and make the required changes on env values:
 4) Create the new MySQL DB on your machine.
 ```sh
 NODE_ENV=development
@@ -65,7 +65,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 DB_PORT=3306
 ```
-Run below commands on terminal:
+Run below commands on project root terminal:
 ```sh
 docker-compose up --build
 ```
